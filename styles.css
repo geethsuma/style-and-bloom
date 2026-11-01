@@ -54,3 +54,25 @@ footer{background:#0d0c0b;color:#d9cdb8;padding:64px 0 30px}footer a{text-decora
 .rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}.rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
 .step{font:500 3rem var(--serif);color:var(--gt)}
+
+.hero.lt{color:#2b2725;background:linear-gradient(90deg,rgba(251,246,238,.82) 0%,rgba(251,246,238,.45) 42%,rgba(251,246,238,0) 70%),var(--hero-img) center/cover no-repeat}
+.hero.lt:after{border-color:rgba(143,109,46,.35)}
+.hero.lt h1{color:#2b2725}.hero.lt .lab{color:#8f6d2e}.hero.lt p{color:#4a413a}
+.hero.lt .btn{background:#8f6d2e;border-color:#8f6d2e;color:#fff}.hero.lt .btn:hover{background:transparent;color:#8f6d2e}
+.hero.lt .btn.o{background:transparent;color:#2b2725;border-color:#2b2725}.hero.lt .btn.o:hover{background:#2b2725;color:#fbf6ee}
+@media(max-width:900px){.hero.lt{background:linear-gradient(180deg,rgba(251,246,238,.85) 0%,rgba(251,246,238,.6) 60%,rgba(251,246,238,.2) 100%),var(--hero-img) 70% center/cover no-repeat}}
+
+/* hero refinement: shorter, tighter, image anchored to top */
+.hero{min-height:clamp(440px,64vh,600px)}
+.hero-copy{padding:56px 0}
+.hero h1{font-size:clamp(2.4rem,5vw,4rem);max-width:15ch;letter-spacing:-.01em}
+.hero p{margin:0 0 1.4rem}
+.hero.lt{background-position:center top}
+.hero-meta{list-style:none;margin:26px 0 0;padding:18px 0 0;display:flex;flex-wrap:wrap;gap:6px 0;border-top:1px solid rgba(143,109,46,.45);font-size:.85rem;letter-spacing:.04em}
+.hero-meta li+li:before{content:"";display:inline-block;width:4px;height:4px;margin:0 14px;border-radius:50%;background:currentColor;vertical-align:middle;opacity:.55}
+.hero:not(.lt) .hero-meta{border-color:rgba(230,211,176,.4)}
+@media(max-width:900px){.hero{min-height:0}.hero-copy{padding:44px 0 40px}.hero.lt{background-position:72% top}.hero-meta{font-size:.8rem}.hero-meta li+li:before{margin:0 10px}}
+/* hero: pin copy to the left side of the background */
+.hero>.wrap{max-width:none;width:100%;margin:0;padding-left:clamp(28px,7vw,120px);padding-right:22px}
+.hero-copy{margin-left:0;text-align:left}
+@media(max-width:900px){.hero>.wrap{padding-left:26px}}
