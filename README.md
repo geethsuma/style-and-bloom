@@ -1,6 +1,6 @@
 # Style & Bloom Decor – Website
 
-Static luxury party-décor website (no build step, no dependencies).
+Static party-decor website (no build step, no dependencies).
 
 ## Files
 - `index.html` – page shell (header, footer, lightbox)
